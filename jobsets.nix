@@ -20,7 +20,7 @@ let
             "keepnr": 1,
             "inputs": {
               "nixpkgs": { "type": "git", "value": "git://github.com/mayflower/nixpkgs-pr ${name}", "emailresponsible": false },
-              "supportedSystems": { "type": "git", "value": "[ \"x86_64-linux\" \"x86_64-darwin\" ]", "emailresponsible": false }
+              "supportedSystems": { "type": "nix", "value": "[ \"x86_64-linux\" \"x86_64-darwin\" ]", "emailresponsible": false }
             }
         }
       '') prs)}
