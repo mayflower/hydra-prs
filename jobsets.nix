@@ -9,7 +9,7 @@ let
       ${concatStringsSep "," (map (name: ''
         "${name}": {
             "enabled": 1,
-            "hidden": "false",
+            "hidden": 0,
             "description": "",
             "nixexprinput": "nixpkgs",
             "nixexprpath": "pkgs/top-level/release.nix",
