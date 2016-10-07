@@ -14,7 +14,7 @@ let
     inputs = {
       nixpkgs = {
         type = "git";
-        value = "git://github.com/mayflower/nixpkgs";
+        value = "git://github.com/mayflower/nixpkgs-pr";
       };
       supportedSystems = {
         type = "nix";
