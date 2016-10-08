@@ -11,8 +11,8 @@ let
             "enabled": 1,
             "hidden": 0,
             "description": "",
-            "nixexprinput": "nixpkgs",
-            "nixexprpath": "pkgs/top-level/release.nix",
+            "nixexprinput": "jobs",
+            "nixexprpath": "default.nix",
             "checkinterval": 60,
             "schedulingshares": 42,
             "enableemail": false,
@@ -20,6 +20,7 @@ let
             "keepnr": 1,
             "inputs": {
               "nixpkgs": { "type": "git", "value": "git://github.com/mayflower/nixpkgs-pr ${name}", "emailresponsible": false },
+              "jobs": { "type": "git", "value": "git://github.com/mayflower/hydra-jobs", "emailresponsible": false },
               "supportedSystems": { "type": "nix", "value": "[ \"x86_64-linux\" \"x86_64-darwin\" ]", "emailresponsible": false }
             }
         }
